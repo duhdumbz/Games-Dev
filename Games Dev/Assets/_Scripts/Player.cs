@@ -9,9 +9,12 @@ public class Player : MonoBehaviour
 
     private Vector2 _input;
 
+    [SerializeField]
+    private float _speed = 3f;
+
     private void FixedUpdate()
     {
-        _rb2d.linearVelocity = _input;
+        _rb2d.linearVelocity = _input * _speed;
     }
 
 
@@ -20,5 +23,6 @@ public class Player : MonoBehaviour
         float horizontalInput = Input.GetAxisRaw(_horizontalAxis);
         float verticalInput = Input.GetAxisRaw(_verticalAxis);
         _input = new Vector2(horizontalInput, verticalInput);
+        _input.Normalize();
     }
 }
