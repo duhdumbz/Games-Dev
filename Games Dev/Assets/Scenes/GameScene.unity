@@ -11003,6 +11003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1383926902}
+  - component: {fileID: 1383926903}
   m_Layer: 0
   m_Name: Coluds
   m_TagString: Untagged
@@ -11031,6 +11032,26 @@ Transform:
   - {fileID: 1125373699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383926903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383926901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e372f19a55ae640bf514bda8001c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clouds:
+  - {fileID: 416778472}
+  - {fileID: 1298046152}
+  - {fileID: 1204615392}
+  - {fileID: 1749203570}
+  - {fileID: 1330029162}
+  - {fileID: 1125373699}
+  _speed: 1
 --- !u!1 &1389844765
 GameObject:
   m_ObjectHideFlags: 0
