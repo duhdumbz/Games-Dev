@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Undefined
   - Weapon
+  - Weapon_1
   layers:
   - Default
   - TransparentFX

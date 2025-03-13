@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private GameObject _crabDead;
 
+    public event Action OnDie = null;
+
     void Start()
     {
         _rb2d = GetComponent<Rigidbody2D>();
@@ -49,6 +51,10 @@ public class Enemy : MonoBehaviour
         {
             Instantiate(_crabDead, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            if (OnDie != null)
+            {
+                OnDie();
+            }
         }
     }
 }   
